@@ -1,0 +1,26 @@
+Title : Learning Git
+
+Git - Distributed Version Controll System(분산 버전 관리 시스템)
+      해당 폴더 내의 파일들을 추적(감시)하는 방식
+
+GitHub, GitLab, Bitbucket ... 
+    - Cloud Git Provider
+      git 파일(git 변경사항)들을 올리는 일종의 저장소
+
+commit 
+파일의 history를 남기는 과정, 제목 필수, 내용 선택
+
+area
+working area(directory)       - 코드를 작성중인 상태
+staging area                  - 파일이 변경되어 commit을 대기중인 상태
+repository or commit area     - commit을 완료한 상태
+
+branch
+master(main)의 마지막 commit에서부터 다른 타임라인을 생성하는 것
+branch가 진행되는 시점에서, master의 변경사항을 업데이트(동기화) 할 수 있음(update from default branch)
+master에서 branch의 변경사항과 합칠 수 있음(merge into current branch)
+(합친다고 branch는 사라지지 않음)
+
+confilct 
+master와 branch에서 서로 같은 라인을 변경하여 commit했을 때 발생,
+vsc로 해당 라인을 수정하여 merge할 수 있음
