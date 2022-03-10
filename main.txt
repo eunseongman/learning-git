@@ -61,3 +61,5 @@ VSC의 Source Control & View-terminal 활용
 M : Modified, - 기존 파일을 수정한 형태
 U : untracked, - 아직 commit하지 않은 형태 (새로 생성한 파일)
 A : added
+
+asdasd
