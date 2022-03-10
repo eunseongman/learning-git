@@ -7,6 +7,8 @@ GitHub, GitLab, Bitbucket ...
     - Cloud Git Provider
       git 파일(git 변경사항)들을 올리는 일종의 저장소
 
+[Git]
+
 commit 
 파일의 history를 남기는 과정, 제목 필수, 내용 선택
 
@@ -24,3 +26,38 @@ master에서 branch의 변경사항과 합칠 수 있음(merge into current bran
 confilct 
 master와 branch에서 서로 같은 라인을 변경하여 commit했을 때 발생,
 vsc로 해당 라인을 수정하여 merge할 수 있음
+
+[GitHub]
+
+fork 
+repository의 전체 history를 복사해 내 계정으로 이동
+
+cloning 
+웹 상에서 fork한 repository를 컴퓨터로 복사(cloning)
+경로 : github desktop - add - clone repository
+해당 방법을 통해 파일을 수정 후 commit&push해도 원본에게 영향을 끼치지 않는다
+
+이후 원본 repository에서 pull request를 통해 원본과의 병합을 요청할 수 있다
+
+fork한 repository는 기본적으로 upstream branch가 존재하며, 이를 통해
+원본의 최신 코드를 가져올 수 있음(fetch origin & merge upstream/master into master)
+( fetch를 함으로써 upstream/master branch를 원격저장소의 최신 commit으로 update,
+이후 master branch로 merge하여 최신 코드로 update )
+
+[GitHub, GitLab, Bitbucket ... ]
+
+issue
+프로젝트가 해야 하는데 아직 하지 않은 일이나, 
+사람들이 발견한 문제나 버그 따위 등을 기록하는 것(장소)
+
+mliestone
+버전을 올릴 때 필요한 것들을 모아둠(체크리스트)
+이슈들을 모아두는 폴더같은 역할, 소속된 이슈를 해결하여 마일스톤을 달성할 수 있음
+
+CLI
+github-desktop을 사용하지 않고 git을 관리하는 방법
+VSC의 Source Control & View-terminal 활용 
+
+M : Modified, - 기존 파일을 수정한 형태
+U : untracked, - 아직 commit하지 않은 형태 (새로 생성한 파일)
+A : added
