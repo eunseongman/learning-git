@@ -74,6 +74,25 @@ git add [. / -a / more options ... ]      // working area -> staging area 이동
 
 git commit [-m "" : commit title 부여]    // commit
 
-git push origin main(branch-name)         // push
+git push origin <main(or branch-name)>    // push
 
-asdadasdasdasdasasds
+(+ HEAD : 현재 위치한 시점 - commit한 시점)
+
+git checkout <commit_id(or main)>         // 과거 시점의 commit으로 이동(or 현재 시점 복귀)
+
+git reset [--soft/--hard] HEAD^           // HEAD에서 한 시점 뒤로 commit삭제 (^개수만큼 뒤로 이동)
+
++ 원격 저장소까지의 삭제 
+ git push origin main --force             // 현재 상태로 push 강제 실행 (오류가 발생 하더라도)
+
++ reset type : mixed, soft, hard
+      hard reset  - commit 완전 삭제(파일 변경 내용 유지 X)
+      soft reset  - 변경 내역을 stage 영역에 추가
+      mixed reset - 변경 내역을 untracked 로 변경
+
++ 원격 저장소에서 불러오기
+ git pull origin main
+
+git checkout [commit_id] -b <new-branch-name>         // [과거의 지점에서] 새 브런치 생성
+
+git branch                                // 브런치 목록 확인
