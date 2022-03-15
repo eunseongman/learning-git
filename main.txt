@@ -54,12 +54,26 @@ mliestone
 버전을 올릴 때 필요한 것들을 모아둠(체크리스트)
 이슈들을 모아두는 폴더같은 역할, 소속된 이슈를 해결하여 마일스톤을 달성할 수 있음
 
-CLI
+[CLI]
+
 github-desktop을 사용하지 않고 git을 관리하는 방법
 VSC의 Source Control & View-terminal 활용 
 
-M : Modified, - 기존 파일을 수정한 형태
-U : untracked, - 아직 commit하지 않은 형태 (새로 생성한 파일)
-A : added
+file-status
+M : Modified,     - 기존 파일을 수정한 형태
+U : untracked,    - 아직 commit하지 않은 형태 (새로 생성한 파일)
+A : added         - staging area 에 파일이 올라간 상태
 
-asdasd
+명령어 
+
+git log
+HEAD -> main      // 컴퓨터로의 commit 완료
+origin/main       // 원격 저장소(사이트)로의 push 완료
+
+git add [. / -a / more options ... ]      // working area -> staging area 이동
+
+git commit [-m "" : commit title 부여]    // commit
+
+git push origin main(branch-name)         // push
+
+asdadasdasdasdasasds
