@@ -27,6 +27,10 @@ confilct
 master와 branch에서 서로 같은 라인을 변경하여 commit했을 때 발생,
 vsc로 해당 라인을 수정하여 merge할 수 있음
 
+.gitignore file
+commit(stage)에 포함시키지 않을 파일들을 적어놓는 파일 
+(ex - .env, /images)
+
 [GitHub]
 
 fork 
@@ -95,4 +99,17 @@ git reset [--soft/--hard] HEAD^           // HEAD에서 한 시점 뒤로 commit
 
 git checkout [commit_id] -b <new-branch-name>         // [과거의 지점에서] 새 브런치 생성
 
-git branch                                // 브런치 목록 확인
+git branch [-d branch-name]               // 브런치 목록 확인 [브런치 삭제]
+
+git push origin --delete <branch-name>    // 원격 저장소에서 브런치 삭제
+
+git commit --amend [--no-edit]            // 가장 마지막 커밋 수정 [커밋 이름 그대로 유지]
+(git add 한 후 실행, 이후 push origin main --force)
+
+git status                                // 커밋할 때 파일들의 상태 보기 (in stage : 초록색, out stage : 빨간색)
+
+git rm [-r folder-name or] <file-name> [--cached]       // stage에서 해당 항목 제거 [캐시에서 삭제 처리]
+
+git remote add <name> <url>               // 다른 이름의 원격 저장소 추가 
+
+git clone <url> <folder-name>                    // 해당 이름으로 fork 파일 내려받기
